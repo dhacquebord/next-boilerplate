@@ -1,0 +1,8 @@
+$headerHeight: 50px;
+$footerHeight: 42px;
+
+.content {
+    padding: $headerHeight 8px 0;
+    box-sizing: border-box;
+    min-height: calc(100vh - #{$footerHeight});
+}

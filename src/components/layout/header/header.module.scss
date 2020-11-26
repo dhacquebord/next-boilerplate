@@ -1,0 +1,38 @@
+.headerWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a65050;
+
+    .header {
+        margin: auto;
+        padding: 10px 8px;
+        box-sizing: content-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+
+        > div {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        .githubIcon {
+            height: 20px;
+            width: 20px;
+            fill: white;
+        }
+    }
+}

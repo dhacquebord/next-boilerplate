@@ -1,0 +1,27 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint/eslint-plugin",
+        "sonarjs",
+        "no-secrets"
+    ],
+    "settings": {
+        "react": {
+            "version": "17"
+        }
+    },
+    "extends": [
+        "eslint:recommended", "plugin:react/recommended"
+    ],
+    "ignorePatterns": ["dist/**", "next.config.js"],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": ["off"],
+        "react/jsx-indent": ["error", 4]
+    }
+}

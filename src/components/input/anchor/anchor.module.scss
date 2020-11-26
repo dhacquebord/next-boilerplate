@@ -1,0 +1,10 @@
+.anchor {
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #00ad9f;
+    border-bottom: 1px solid #0000;
+
+    &:hover {
+        border-bottom: 1px solid #00ad9f;
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "plugins": [
+        "stylelint-no-unsupported-browser-features"
+    ],
+    "extends": ["stylelint-config-standard"],
+    "rules": {
+        "indentation": 4,
+        "no-descending-specificity": null,
+        "comment-empty-line-before": "never",
+        "plugin/no-unsupported-browser-features": [true, {
+            "severity": "warning",
+            "browsers": ["> 1%"]
+        }]
+    },
+    "ignoreFiles": ["**/*.tsx"]
+}

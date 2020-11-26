@@ -1,0 +1,4 @@
+{
+    "*.ts?(x)": "npm run lint-and-fix",
+    "*.scss": "npm run stylelint",
+}

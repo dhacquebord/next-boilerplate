@@ -1,0 +1,43 @@
+{
+    "name": "next-boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint . --ext .ts,.js,.tsx",
+        "lint-and-fix": "eslint . --ext .ts,.js,.tsx --fix",
+        "stylelint": "stylelint '**/*.css' '**/*.scss'"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "author": "Dennis Hacquebord",
+    "dependencies": {
+        "classnames": "^2.2.6",
+        "next": "^10.0.2",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "sass": "^1.29.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.8",
+        "@types/react": "^16.9.56",
+        "@typescript-eslint/eslint-plugin": "^4.8.1",
+        "@typescript-eslint/parser": "^4.8.1",
+        "eslint": "^7.13.0",
+        "eslint-plugin-no-secrets": "^0.6.8",
+        "eslint-plugin-react": "^7.21.5",
+        "eslint-plugin-sonarjs": "^0.5.0",
+        "husky": "^4.3.0",
+        "lint-staged": "^10.5.1",
+        "standard-react": "^4.0.0",
+        "stylelint": "^13.8.0",
+        "stylelint-config-standard": "^20.0.0",
+        "stylelint-no-unsupported-browser-features": "^4.1.4",
+        "typescript": "^4.0.5"
+    }
+}
