@@ -1,3 +1,50 @@
 .title {
     color: #333;
 }
+
+.topBar {
+    display: flex;
+}
+
+.listSelector {
+    margin-left: auto;
+}
+
+.statusColor {
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+}
+
+.statusTitle {
+    text-transform: capitalize;
+}
+
+.accordionSummary > div {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statusName {
+    display: flex;
+    align-items: center;
+}
+
+.statusSummary {
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-left: 10px;
+    }
+
+    span {
+        margin-left: 3px;
+    }
+}
+
+.taskList {
+    flex-direction: column;
+}

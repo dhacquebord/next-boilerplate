@@ -1,7 +1,9 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { WindowSizeProvider } from 'components'
-import './_app.scss'
+import { AppBar, Toolbar } from '@material-ui/core'
+import styles from './_app.module.scss'
+import './global.scss'
 
 const Index = ({ Component, pageProps }: AppProps) => (
     <>
@@ -23,9 +25,17 @@ const Index = ({ Component, pageProps }: AppProps) => (
             <meta name="msapplication-TileColor" content="#ffffff" />
             <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
             <meta name="theme-color" content="#ffffff" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         </Head>
         <WindowSizeProvider>
-            <Component {...pageProps} />
+            <AppBar position="static" className={styles.appBar}>
+                <Toolbar>
+                    <h1>ClickUp Board</h1>
+                </Toolbar>
+            </AppBar>
+            <div className={styles.content}>
+                <Component {...pageProps} />
+            </div>
         </WindowSizeProvider>
     </>
 )
