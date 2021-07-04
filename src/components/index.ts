@@ -13,3 +13,5 @@ export { default as Anchor } from './input/anchor'
 // Icons
 export { default as Logo } from './icons/logo'
 export { default as GithubIcon } from './icons/github'
+
+export { default as TaskCard } from './task-card'
